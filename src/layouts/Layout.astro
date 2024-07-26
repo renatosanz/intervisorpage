@@ -1,0 +1,47 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Renato Sanchez" />
+    <meta name="keywords" content="SDSS, MaNGA, InterVisor, IFU, IFS" />
+    <meta name="description" content="InterVisor landing page" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- HTML in your document's head -->
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link rel="icon" type="image/svg+xml" href="/InterVisor.ico" />
+    <link rel="stylesheet" href="/src/layouts/base.css" />
+    <link rel="stylesheet" href="/src/layouts/Layout.css" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  html {
+    background: var(--bg0);
+    color: var(--fg1);
+  }
+  code {
+    font-family:
+      Menlo,
+      Monaco,
+      Lucida Console,
+      Liberation Mono,
+      DejaVu Sans Mono,
+      Bitstream Vera Sans Mono,
+      Courier New,
+      monospace;
+  }
+</style>

@@ -1,0 +1,67 @@
+---
+const options = [
+  { label: "Home", link: "/" },
+  { label: "GitHub Repo", link: "https://github.com/renatosanz/delfin" },
+  { label: "Docs", link: "https://github.com/renatosanz/delfin" },
+  { label: "About", link: "" },
+];
+
+const mylinks = [
+  { icon: "/github.svg", link: "https://github.com/renatosanz" },
+  { icon: "/twitter.svg", link: "https://x.com/riprtx" },
+  { icon: "/file-text.svg", link: "https://riprtx.netlify.app/" },
+  { icon: "/user.svg", link: "https://renatosanchez.netlify.app/" },
+  { icon: "/pen-tool.svg", link: "https://editor.p5js.org/renatosanz/sketches" },
+];
+---
+
+<nav>
+  <div class="navbar-links">
+    {
+      options.map((e) => (
+        <div class="navbar-links-items round10px">
+          <a href={e.link}>{e.label}</a>
+        </div>
+      ))
+    }
+  </div>
+
+  <div class="personal-links round10px">
+    {
+      mylinks.map((e) => (
+        <div class="personal-links-items ">
+          <a href={e.link}><img src={e.icon} alt=""></a>
+        </div>
+      ))
+    }
+  </div>
+</nav>
+
+<style>
+  nav {
+    justify-content: space-between;
+    display: flex;
+  }
+  .navbar-links {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .navbar-links-items {
+    background: var(--bg1);
+    padding: 0.25rem 0.5rem;
+    margin: auto;
+    font-size: 0.8rem;
+  }
+
+  .personal-links {
+    background: var(--fg2);
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .personal-links a{
+    display: flex;
+  }
+  .personal-links-items {
+    margin: auto;padding: 0.25rem;
+  }
+</style>

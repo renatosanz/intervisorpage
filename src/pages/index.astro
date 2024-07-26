@@ -1,0 +1,95 @@
+---
+import Layout from "../layouts/Layout.astro";
+import NavBar from "../components/NavBar.astro";
+---
+
+<Layout title="InterVisor">
+  <div id="main-content" class="gen-width-page">
+    <r-grid columns="7">
+      <r-cell span="3">
+        <span><h1>InterVisor</h1></span>
+      </r-cell>
+      <r-cell span="-">
+        <span
+          ><h2>
+            GUI processor, analyzer, and handler for datacubes from the <b
+              >MaNGA</b
+            > / <i>Sloan Digital Sky Survey.</i> Written in <b
+              style="color: var(--yellow);">Python</b
+            >.
+          </h2></span
+        >
+      </r-cell>
+      <r-cell span="-">
+        <h3>by Renato Sanchez</h3>
+      </r-cell>
+      <r-cell span="-">
+        <NavBar />
+      </r-cell>
+      <r-cell class="spacer"> </r-cell>
+    </r-grid>
+    <div class="content-page round10px">
+      <r-grid columns="8">
+        <r-cell span="3">
+          <img src="/menu.png" alt="" class="round10px" />
+        </r-cell>
+        <r-cell span="4-">
+          <div class="middler-p">
+            <p class="center">
+              Este proyecto fue ideado y creado durante la estancia del programa
+              Delfín 2024 con el fin de obtener un software intuitivo y completo
+              con las herramientas necesarias para el estudio de los datos de
+              las galaxias observadas en el MaNGA. El objetivo de creación de
+              rutinas de visualización de cubos de datos fue alcanzado y llevado
+              a una interface limpia y completa.
+            </p>
+          </div>
+        </r-cell>
+        <r-cell class="spacer"> </r-cell>
+
+				<r-cell span=4>
+          <img src="/recent_files.png" alt="" class="round10px" />
+					<img src="/moreinfo.png" alt="" class="round10px" />
+					<img src="/VIsor_heatmap.png" alt="" class="round10px" />
+					<img src="/extraclines.png" alt="" class="round10px" />
+        </r-cell>
+        <r-cell span=4>
+          <img src="/modes.png" alt="" class="round10px" />
+					<img src="/spectrum_visor.png" alt="" class="round10px" />
+					<img src="/file_explorer_visor.png" alt="" class="round10px" />
+        </r-cell>
+
+        <r-cell span="-">
+					<img src="/all_in_one.png" alt="" class="round10px" />
+        </r-cell>
+				
+        <r-cell span=4>
+          <div class="middler-p">
+            <p>Modos de procesamiento y visualización.</p>
+          </div>
+        </r-cell>
+        <r-cell class="spacer"> </r-cell>
+      </r-grid>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  #main-content {
+    padding: 10vh 0;
+    display: flex;
+    flex-direction: column;
+  }
+  r-grid {
+    width: 100%;
+  }
+  h1 {
+    margin-bottom: 1rem;
+    color: var(--fg0);
+  }
+  h2 {
+    text-wrap: pretty;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+</style>
