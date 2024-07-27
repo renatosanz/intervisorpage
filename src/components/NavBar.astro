@@ -2,7 +2,7 @@
 const options = [
   { label: "Home", link: "/" },
   { label: "GitHub Repo", link: "https://github.com/renatosanz/InterVisor" },
-  { label: "Docs", link: "https://github.com/renatosanz/delfin" },
+  { label: "Article", link: "https://github.com/renatosanz/delfin" },
 ];
 
 const mylinks = [
@@ -19,7 +19,7 @@ const mylinks = [
     {
       options.map((e) => (
         <div class="navbar-links-items round10px">
-          <a href={e.link}>{e.label}</a>
+          <a href={e.link} target="_blank">{e.label}</a>
         </div>
       ))
     }
@@ -29,7 +29,7 @@ const mylinks = [
     {
       mylinks.map((e) => (
         <div class="personal-links-items ">
-          <a href={e.link}><img src={e.icon} alt=""></a>
+          <a href={e.link} target="_blank"><img src={e.icon} alt=""></a>
         </div>
       ))
     }

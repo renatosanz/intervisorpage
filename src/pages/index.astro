@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import NavBar from "../components/NavBar.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="InterVisor">
@@ -10,15 +11,15 @@ import NavBar from "../components/NavBar.astro";
         <span><h1>InterVisor</h1></span>
       </r-cell>
       <r-cell span="-">
-        <span
-          ><h2>
+        <span>
+          <h2>
             GUI processor, analyzer, and handler of datacubes from the <b
               >MaNGA</b
             > / <i>Sloan Digital Sky Survey.</i> Written in <b
               style="color: var(--yellow);">Python</b
             >.
-          </h2></span
-        >
+          </h2>
+        </span>
       </r-cell>
       <r-cell span="-">
         <h3>by Renato Sanchez</h3>
@@ -36,41 +37,47 @@ import NavBar from "../components/NavBar.astro";
         <r-cell span="4-">
           <div class="middler-p">
             <p class="center">
-              Este proyecto fue ideado y creado durante la estancia del programa
-              Delfín 2024 con el fin de obtener un software intuitivo y completo
-              con las herramientas necesarias para el estudio de los datos de
-              las galaxias observadas en el MaNGA. El objetivo de creación de
-              rutinas de visualización de cubos de datos fue alcanzado y llevado
-              a una interface limpia y completa.
+              This project was conceived and created during the Delfín 2024
+              program to obtain intuitive and comprehensive software with the
+              necessary tools for studying data from galaxies observed in MaNGA.
+              The goal of creating routines for visualizing data cubes was
+              achieved and brought to a clean and complete interface.
             </p>
           </div>
         </r-cell>
         <r-cell class="spacer"> </r-cell>
 
-				<r-cell span=4>
-          <img src="/recent_files.png" alt="" class="round10px" />
-					<img src="/moreinfo.png" alt="" class="round10px" />
-					<img src="/VIsor_heatmap.png" alt="" class="round10px" />
-					<img src="/extraclines.png" alt="" class="round10px" />
+        <r-cell span="-">
+          <div class="middler-p">
+            <h3>Processing and Visualization Modes</h3>
+          </div>
         </r-cell>
-        <r-cell span=4>
+
+        <r-cell span="4">
+          <img src="/recent_files.png" alt="" class="round10px" />
+          <p class="center">Recent Files System</p>
+          <img src="/moreinfo.png" alt="" class="round10px" />
+          <p class="center">Specific information about the data cube</p>
+          <img src="/VIsor_heatmap.png" alt="" class="round10px" />
+          <p class="center">Images at specific wavelengths</p>
+          <img src="/extraclines.png" alt="" class="round10px" />
+          <p class="center">Emission line extractor</p>
+        </r-cell>
+        <r-cell span="4">
           <img src="/modes.png" alt="" class="round10px" />
-					<img src="/spectrum_visor.png" alt="" class="round10px" />
-					<img src="/file_explorer_visor.png" alt="" class="round10px" />
+          <p class="center">Processing Modes</p>
+          <img src="/spectrum_visor.png" alt="" class="round10px" />
+          <p class="center">Spectrum Viewer</p>
+          <img src="/file_explorer_visor.png" alt="" class="round10px" />
+          <p class="center">Support for .fits and .gz files</p>
         </r-cell>
 
         <r-cell span="-">
-					<img src="/all_in_one.png" alt="" class="round10px" />
+          <img src="/all_in_one.png" alt="" class="round10px" />
         </r-cell>
-				
-        <r-cell span=4>
-          <div class="middler-p">
-            <p>Modos de procesamiento y visualización.</p>
-          </div>
-        </r-cell>
-        <r-cell class="spacer"> </r-cell>
       </r-grid>
     </div>
+    <Footer/>
   </div>
 </Layout>
 
