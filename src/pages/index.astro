@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import NavBar from "../components/NavBar.astro";
 import Footer from "../components/Footer.astro";
+import Card from "../components/Card.astro";
 ---
 
 <Layout title="InterVisor">
@@ -76,8 +77,13 @@ import Footer from "../components/Footer.astro";
           <img src="/all_in_one.png" alt="" class="round10px" />
         </r-cell>
       </r-grid>
+      <Card
+        title="Article about this project"
+        body="I recommend to check it if you want to understand how it works."
+        href="https://github.com/renatosanz/delfin/blob/main/report/main.pdf"
+      />
     </div>
-    <Footer/>
+    <Footer />
   </div>
 </Layout>
 
